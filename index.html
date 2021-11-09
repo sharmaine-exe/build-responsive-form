@@ -14,12 +14,113 @@
         </div>
     </header>
     <div class="inner-container">
-        <form action="#" method="POST">
+        <form action="" method="POST">
             <!-- every input requires a label.
                 (label/input pair)
                 the for="" and id="" 
                 always have to match
             -->
+
+            <div>
+                <label for="text-field"> Generic Text Field</label>
+                <input id="text-field" name="text-field" type="text" placeholder="First & Last name"/>
+            </div>
+
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email"  name="email"  placeholder="joe.doe@example.ca"/>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone"  name="phone" placeholder="Phone #" maxlength="10"/>
+            </div>
+
+            <div>
+                <label for="website">Website</label>
+                <input type="url" id="website"  name="website" placeholder="Please start with http:// or https://" />
+            </div>
+
+            <div>
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd"  name="pwd" placeholder="Password"/>
+            </div>
+
+            <!--  range sliders!! -->
+            <div>
+                <label for="range">Volume??</label>
+                <input type="range" id="range"  name="range" min="0" max="10" step="1" value="0"/>
+            </div>
+
+            <div>
+                <label for="pwd">Colour selector</label>
+                <input type="color" id="colour" name="colour" value="#ea9adf"/>
+            </div>
+
+            <!--- field set!! for each sections of form -->
+            <fieldset>
+                <legend>Radio Button field</legend>
+                <!-- radio buttons must share same name attr to be connected -->
+                <div>
+                    <input type="radio" name="animals" id="hamsters" value="Hamsters">
+                    <label for="hamsters">🐹 Hamsters</label>
+                </div>
+                <div>
+                    <input type="radio" name="animals" id="crocodiles" value="Crocodiles">
+                    <label for="crocodiles">🐊 Crocodiles</label>
+                </div>
+                <div>
+                    <input type="radio" name="animals" id="dogs" value="Dogs" checked>
+                    <label for="dogs"> 🐶 Dogs</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Checbox field</legend>
+                <div>
+                    <input type="checkbox" name="spider" id="insects" value="Spider">
+                    <label for="spider">🐹 Spiders</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="scorpion" id="insects" value="Scorpion">
+                    <label for="scorpion">🦂 Scorpion</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="ant" id="insects" value="Ant" checked>
+                    <label for="ant">🐜 Ant </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dropdown Select option</legend>
+                <div>
+                    <label for="select-field">Select an Option</label>
+                    <select multiple size="5" id="select-field" name="select-field">
+                        <option value="" checked>Please select an option</option>
+                        <option value="1" >Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                        <option value="4">Option 4</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <label for="message">Message </label>
+                    <textarea id="message" name="message" placeholder="Message" cols="20" rows="5"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- submit -->
+            <div>
+                <input type="submit" value="Send" name="submit"/>
+                <button type="submit" value="Send">Submit</button>
+                <!-- button elemmnt behaves diff in diff broswers and
+                    can submit of variation of results. Input element work and behaves the same 
+                    in all broswers
+                -->
+            </div>
 
         </form>
     </div>

@@ -1,2 +1,78 @@
 /* CSS Variables - https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 
+html {
+    color: #222;
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+.inner-container {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+input, select, textarea {
+    width: 60rem;
+}
+
+form div, fieldset {
+    margin-bottom: 3rem;
+}
+
+fieldset div {
+    margin-bottom: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    /* values can be:
+        vertical, horizontal or both
+    */
+    max-width: 60rem;
+    min-width: 60rem;
+    min-height: 8rem;
+}
+
+/* use attr to target styling */
+input[type=radio],
+input[type=checkbox] {
+    width: initial; /* or auto */
+}
+
+/* place labels side by side the radio/checkbox 
+use:first-of-typedisplay: flex; or display: inline; */
+
+label[for="hamsters"],
+label[for="dogs"],
+label[for="crocodiles"],
+label[for="spider"],
+label[for="scorpion"],
+label[for="ant"]{
+    display: inline;
+    margin-left: 1rem;
+}
+
+/* target submit button */ 
+input[type=submit] {
+    
+}
